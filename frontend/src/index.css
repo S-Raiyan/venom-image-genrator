@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+html,
+body,
+#root{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body{
+
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.4s ease;
+
+}
+
+body.light{
+  background: #f8fafc;
+  color:#111827;
+  min-height: 100vh;
+}
+
+body.dark{
+  background-color: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.animate-typing-venom{
+ display: inline-block;
+ border-right: 4px solid #fff;
+ animation: typing 4s steps(21) forwards, blink 0.8s infinite ;
+ overflow : hidden;
+ white-space: nowrap;
+ border-right:4px solid white;
+ font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+@keyframes typing{
+  from{ width: o;}
+  to {width: 21ch;}
+
+
+}
+
+@keyframes blink{
+  50%{border-color:transparent}
+}
+
